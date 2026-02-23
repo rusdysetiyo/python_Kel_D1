@@ -1,0 +1,1 @@
+print(f" Tiba-tiba muncul ")
