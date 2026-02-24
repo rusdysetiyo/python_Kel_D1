@@ -7,7 +7,7 @@ def kurangi_nyawa(player_data):
     player_data["nyawa"] -= 1
     print(f"❌ Jawabanmu salah! Sisa nyawa: {player_data['nyawa']}")
 
-def cek_mati(player_data):
+def cek_kematian(player_data):
     # Ngecek nyawa habis
     if player_data["nyawa"] <= 0:
         return True  # Mati
