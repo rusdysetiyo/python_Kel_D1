@@ -12,7 +12,9 @@ def hadapi_monster(player_data, stage_data):
     while True:
         # Meminta input dan otomatis diubah jadi huruf besar (A/B/C)
         jawaban_user = input("Jawabanmu (A/B/C): ").upper()
-
+        if jawaban_user not in ["A", "B", "C"]:
+                print("⚠️ Pilihan tidak valid! Masukkan hanya A, B, atau C.")
+                continue
         if jawaban_user == stage_data['jawaban_benar']:
             print("✅ BENAR! Monster itu berhasil dikalahkan!")
             return True 
